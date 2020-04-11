@@ -16,6 +16,7 @@
 		8FBCA8AA2442738B002169D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBCA8A92442738B002169D0 /* Assets.xcassets */; };
 		8FBCA8AD2442738B002169D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBCA8AC2442738B002169D0 /* Preview Assets.xcassets */; };
 		8FBCA8B02442738B002169D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBCA8AE2442738B002169D0 /* LaunchScreen.storyboard */; };
+		8FBCA8B62442747C002169D0 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBCA8B52442747C002169D0 /* MultilineTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		8FBCA8AC2442738B002169D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8FBCA8AF2442738B002169D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FBCA8B12442738B002169D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FBCA8B52442747C002169D0 /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				8FBCA8862442737D002169D0 /* MultilineTextFieldSwiftUI.h */,
 				8FBCA8872442737D002169D0 /* Info.plist */,
+				8FBCA8B52442747C002169D0 /* MultilineTextField.swift */,
 			);
 			path = MultilineTextFieldSwiftUI;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				TargetAttributes = {
 					8FBCA8822442737D002169D0 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					8FBCA88B2442737D002169D0 = {
 						CreatedOnToolsVersion = 11.4;
@@ -271,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FBCA8B62442747C002169D0 /* MultilineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		8FBCA8982442737D002169D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AXQZFYS638;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.firstblink.MultilineTextFieldSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		8FBCA8992442737D002169D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AXQZFYS638;
@@ -485,6 +493,7 @@
 		8FBCA89B2442737D002169D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXQZFYS638;
 				INFOPLIST_FILE = MultilineTextFieldSwiftUITests/Info.plist;
@@ -503,6 +512,7 @@
 		8FBCA89C2442737D002169D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXQZFYS638;
 				INFOPLIST_FILE = MultilineTextFieldSwiftUITests/Info.plist;
